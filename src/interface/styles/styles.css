@@ -1,46 +1,75 @@
 .header {
-  width: 100%;
-  height: 100px;
-  line-height: 50px;
+  background-color: #F6F6F6;
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   position: relative;
 }
 
-.container-fluid{
-  background-color: #F6F6F6;
-  width: 100%;
-  --bs-gutter-x: 0px;
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar__logo {
+  width: 100px;
+  margin: 0;
 }
 
 .navbar__ul {
+  list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
-  list-style: none;
-  margin-right: 10px;
-  
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  transform: translateY(-120%);
+  transition: all 400ms;
 }
 
 .navbar__li {
   color: rgb(15, 15, 15);
   font-weight: normal;
   font-size: 18px;
+  cursor: pointer;
   text-align: center;
 }
 
-.navbar__logo {
-  width: 100px;
-  margin: 10px 0px 10px 0px;
+.navbar-toggler {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
 }
 
-.offcanvas-header{
-  align-self: flex-end;
-  margin-top: 18px;
-  margin-right: 18px;
+.navbar__left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+
+.btn-close {
+  z-index: 200;
+  position: relative;
 }
 
 .btn-close:focus{
@@ -52,19 +81,6 @@
   outline: none;
   box-shadow: none;
 }
-
-.navbar-toggler{
-  border: none;
-  font-size: 30px;
-  padding: 0;
-}
-
-.btn-close{
-  border: none;
-  font-size: 30px;
-  padding: 0;
-}
-
 
 /* Footer */
 
@@ -143,37 +159,40 @@ footer {
   margin-top: 100px;
 }
 
-
 /* Queries */
 
 @media only screen and (max-width: 1200px){
-
-  .navbar{
-    width: 95%;
-    padding: 0px;
-    background-color: #F6F6F6;
-  }
-
-  .navbar__ul{
-    margin-right: 0px;
-  }
-
-  .offcanvas-header{
-    align-self: flex-end;
-    margin-top: 20px;
-    margin-right: 1px;
-  }
-
-  .navbar-toggler{
-    border: none;
-    font-size: 30px;
-    margin-right: 6px;
-    padding: 0;
-  }
 
   footer {
     width: 90%;
     margin: 0 auto;
     margin-top: 50px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar__right {
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar.active .navbar__ul,
+  .navbar__ul.active {
+    transform: translateY(0%);
+    
+  }
+  
+  .navbar__ul{
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F6F6;
+    z-index: 1;
+    position: absolute;
   }
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Index = () => {
   return (
     <main className="index-main">
-      <section>
+      <section className="index-introducing">
         <div>
           <h2 className="index-h2 animate__animated animate__fadeIn">
             Introducing <strong className="index-strong">⭐Wordplan⭐</strong>
