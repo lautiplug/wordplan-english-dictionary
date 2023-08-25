@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'SF-Pro';
+  src: url(../src/Font/SF-Pro-Display-Medium.otf) format('truetype');
+}
+
+html {
+  color: rgb(36, 34, 34);
+}
+
+body{
+  background-color: #F6F6F6;
+}
+
+* {
+  font-family: "SF-Pro";
+}
+
+p {
+  font-size: 22px;
+  color: rgb(36, 34, 34);
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+h1,
+h3,
+strong {
+  font-size: 28px;
+  color: rgb(22, 21, 21);
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+h4 {
+  font-weight: normal;
+  color: rgb(16, 131, 226);
+  font-size: 22px;
+}
+
+strong {
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  color: rgb(22, 21, 21);
+  font-weight: normal;
+  font-size: 22px;
+}
+
+li {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+ul{
+  padding-left: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.animate__zoomIn{
+  animation-duration: 100ms;
+}

@@ -1,0 +1,388 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main{
+  margin-top: 50px;
+}
+
+.word-main{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-main-flex{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  margin: 0 auto;
+}
+
+.word-searching{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.fa-magnifying-glass{
+  font-size: 25px;
+  margin-top: 2px;
+  color: rgb(16, 131, 226);
+  cursor: pointer;
+}
+
+.input-word{
+  width: 325px;
+  padding: 5px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(17, 17, 17);
+  color: rgb(24, 22, 22);
+  transition: all 300ms;
+  font-size: 22px;
+}
+
+
+/* Word controls */
+
+.word-controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-h1{
+  font-size: 75px;
+  font-weight: 900;
+}
+
+.word-h1::first-letter{
+  text-transform: uppercase;
+}
+
+/* Word controls */
+
+/* Word Highlight Section */
+
+.word-highligt-section{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid rgb(109, 109, 109);
+  border-radius: 15px;
+}
+
+.word-highlight-flex{
+  display: flex;
+  align-items: center;
+}
+
+.phonetics-p{
+  margin-bottom: 15px;
+}
+
+.definition-main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.definition-h3{
+  font-weight: 900;
+}
+
+.definition-p{
+  margin-top: 10px;
+}
+
+.word-description{
+  display: flex;
+  flex-direction: column;
+}
+
+.phonetics-p {
+  font-size: 25px;
+}
+/* Word Highlight Section */
+
+/* word-speech-eg */
+
+audio {
+  border-radius: 25px;
+  border: 1px solid rgb(16, 131, 226);
+}
+
+.word-speech-eg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  min-height: auto;
+  border-radius: 15px;
+}
+
+.word-part-of-speech-ul{
+  width: 25%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-self: self-start;
+}
+
+.word-part-of-speech-li{
+  color: rgb(16, 131, 226);
+}
+
+.examples-main{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+.examples{
+  margin: 5px 0px 5px 0px;
+}
+
+.examples-p{
+  font-weight: 900;
+}
+
+.word-speech-synonysm{
+  outline: 1px solid rgb(36, 34, 34);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.synonysm-container{
+  margin: 10px;
+}
+
+.synonysm-container h1 {
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.synonysm-group{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.synonysm{
+  color: rgb(16, 131, 226);
+  width: 100%;
+}
+
+/* word-speech-eg */
+
+
+/* IndexMain */
+.index-main {
+  width: 40%;
+  height: 70vh;
+  margin: 0 auto;
+  margin-top: 86px;
+  display: flex;
+  align-items: center;
+}
+
+.index-main section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.index-h2{
+  margin-top: 20px;
+  font-size: 22px;
+  text-align: center;
+  
+  font-weight: bold;
+}
+
+.index-strong{
+  background: #ccc;
+  background: linear-gradient(90deg, #f36fe8, #f39212);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+}
+
+.index-main a {
+  align-self: center;
+}
+
+/* BACKGROUND MOVE */
+.button-background-move {
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(236, 232, 232, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  align-self: center;
+}
+
+.button-background-move:after {
+  content: "";
+  background-image: url('https://www.apple.com/v/iphone-xr/a/images/overview/copy_texture_4_large.jpg');
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-background-move:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-background-move {
+    padding: 13px 50px 13px;
+  }
+}
+/* IndexMain */
+
+/* Input Word */
+
+
+.error-p{
+  margin-top: 20px;
+  font-size: 22px;
+  text-align: center;
+  background: #ccc;
+  background: linear-gradient(90deg, #0040f0, #12f3f3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+}
+
+.error-msg-link{
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid red;
+}
+
+
+/* Queries */
+
+@media only screen and (max-width: 1200px) {
+  .word-highligt-section{
+    width: 90%;
+  }
+
+  .form-main-flex{
+    width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 1050px){
+
+  .word-h1{
+    font-size: 55px;
+    font-weight: 900;
+  }
+
+  audio {
+    width: 300px;
+  }
+  
+  .word-speech-eg{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .word-part-of-speech-ul p {
+    width: 100px
+  }
+
+  .word-part-of-speech-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .word-part-of-speech-flex{
+    display: flex;
+  }
+  
+  .word-part-of-speech-li{
+    align-self: flex-end;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .form-main-flex{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 610px){
+  .word-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  .phonetics-p {
+    margin-top: 10px;
+  }
+  
+  .word-searching{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .fa-magnifying-glass{
+    font-size: 28px;
+  }
+}
