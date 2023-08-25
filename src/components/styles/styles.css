@@ -385,4 +385,13 @@ audio {
   .fa-magnifying-glass{
     font-size: 28px;
   }
+
+  .word-highligt-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid rgb(109, 109, 109);
+    border-radius: 15px;
+  }
 }
