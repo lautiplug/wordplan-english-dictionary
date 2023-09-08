@@ -26,7 +26,7 @@ export const useFetch = (url) => {
       const data = await resp.json();
   
       if (!resp.ok) {
-        throw new Error(`No results found.`);
+        throw new Error("No results found.");
       }
   
       if (data.resp === "False") {

@@ -179,7 +179,6 @@ footer {
   .navbar.active .navbar__ul,
   .navbar__ul.active {
     transform: translateY(0%);
-    
   }
 
   .navbar {
