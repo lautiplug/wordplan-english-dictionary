@@ -10,9 +10,9 @@ To run it follow the following steps:
 
 # Any comments, tips and more will be well received! Feel free to contribute 🤝
 
-You can see more projects made by me on my github profile.
+Demo: https://wordplan.netlify.app/
 
-Demo: 
+You can see more projects made by me on my different profiles.
 
 - [Github Profile](https://github.com/lautiplug) 
 - [Linkedin](https://www.linkedin.com/in/emir-lautaro-pintos-848463255/)
