@@ -39,10 +39,10 @@ export const Navbar = () => {
             </button>
             <ul className={`navbar__ul ${menuOpen ? "active" : ""}`}>
               <li className="navbar__li">
-                <a href="https://github.com/lautiplug">Contribute</a>
+                <a target="_blank" href="https://github.com/lautiplug">Contribute</a>
               </li>
               <li className="navbar__li">
-                <a href="https://lautitheplug.netlify.com/">
+                <a target="_blank" href="https://lautiplug.netlify.app/project/English-Vocabulary">
                   How did I create this?
                 </a>
               </li>
