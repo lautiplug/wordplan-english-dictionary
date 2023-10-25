@@ -386,6 +386,7 @@ audio {
   }
   
   .word-searching{
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 15px;
